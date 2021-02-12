@@ -6,7 +6,7 @@ Generates a static site with the following features:
 
 - Header and footer templates
 - Sitemap XML
-- SSGIGNORE functionality
+- JSSGIGNORE functionality
 - Auto-generated article list
 
 Idea from [Roman Zolotarev](https://www.romanzolotarev.com/ssg.html).
