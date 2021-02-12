@@ -57,12 +57,12 @@ main() {
 	(cd "$src" && cpio -pdu "$dst")
 
 	fs=$(list_files "$1")
-	#(
- #	if test -f "$dst/.files"
-#	then list_affected_files "$src" "$dst/.files"
-#	else list_files "$1"
-#	fi
-#	)
+	(
+ 	if test -f "$dst/.files"
+	then list_affected_files "$src" "$dst/.files"
+	else list_files "$1"
+	fi
+	)
 	
 	if test -n "$fs"
 	then

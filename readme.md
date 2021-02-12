@@ -2,23 +2,22 @@
 
 ## Written in POSIX compliant shell.
 
-
-
 Generates a static site with the following features:
 
- - Header and footer templates
- - Sitemap XML
- - SSGIGNORE functionality
- - Auto-generated article list
+- Header and footer templates
+- Sitemap XML
+- SSGIGNORE functionality
+- Auto-generated article list
 
 Idea from [Roman Zolotarev](https://www.romanzolotarev.com/ssg.html).
-
 
 ## Usage
 
 ```sh
-$ ./jssg src dst title base_url
+$ chmod +x ./JSSG
+$ ./JSSG src dst title base_url
 ```
+
 - `src` - Source directory where templates and raw md/html files are kept.
 - `dst` - Destination directory where **JSSG** will place the rendered site.
 - `title` - Title for overall site.
@@ -26,12 +25,13 @@ $ ./jssg src dst title base_url
 
 ## Templates
 
-To use header and footer templates, create files titled **_HEADER.html** and **_FOOTER.html** within the `src` directory. Every generated page will
+To use header and footer templates, create files titled **\_HEADER.html** and **\_FOOTER.html** within the `src` directory. Every generated page will
 have these appended to their HTML.
 
 ## Auto-generated article list
 
 In your `index.html` file place the following tag anywhere to generate a list of articles with links.
+
 ```
 </article>
 ```
