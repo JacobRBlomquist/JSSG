@@ -255,7 +255,6 @@ render_article_list() {
 	urls="$1"
 	base_url="$2"
 	items=""
-	
 	for i in $1; do
 		if ! echo $i | grep -Eq "index|contact"; then
 			url="$i"

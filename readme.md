@@ -25,7 +25,7 @@ $ ./JSSG src dst title base_url
 
 ## Templates
 
-To use header and footer templates, create files titled **\_HEADER.html** and **\_FOOTER.html** within the `src` directory. Every generated page will
+To use header and footer templates, create files titled `\_footer.html` and `\_footer.html` within the `src` directory. Every generated page will
 have these appended to their HTML.
 
 ## Auto-generated article list
@@ -35,6 +35,8 @@ In your `index.html` file place the following tag anywhere to generate a list of
 ```
 </article>
 ```
+
+Files that contain `index` and `contact` are excluded. The link name is determined by the contents of an `h1` tag which MUST be the first line of the article html files.
 
 ## Dependencies
 
@@ -54,4 +56,6 @@ $ sudo apt-get install cpio
 
 #### Redhat
 
+```sh
 $ sudo yum install cpio
+```
