@@ -32,7 +32,7 @@ main() {
 	dst=$(readlink_f "$2")
 
 	IGNORE=$(
-		if ! test -f "$src/.ssgignore"
+		if ! test -f "$src/.jssgignore"
 		then
 			printf ' ! -path "*/.*"'
 			return
@@ -41,7 +41,7 @@ main() {
 		do
 			test -n "$x" || continue
 			printf ' ! -path "*/%s*"' "$x"
-		done < "$src/.ssgignore"
+		done < "$src/.jssgignore"
 	)
 
 	# files
